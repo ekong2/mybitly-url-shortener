@@ -1,0 +1,13 @@
+<div id='signup'>
+  <h1>signup</h1>
+  <form name="signupForm" ng-submit='signup()' novalidate>
+    <input type='text' placeholder="Username" name="username" ng-model='user.username' ng-minlength="3" ng-maxlength="8" required>
+    <p ng-show="signupForm.username.$error.minlength" class="help-block">Username is too short.</p>
+    <p ng-show="signupForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+    <input type="password" placeholder="Password" name="password" ng-model='user.password' ng-minlength="3" ng-maxlength="8" required>
+    <p ng-show="signupForm.password.$error.minlength" class="help-block">Password is too short.</p>
+    <p ng-show="signupForm.password.$error.maxlength" class="help-block">Password is too long.</p>
+    <button type="submit" ng-disabled="userForm.$invalid">signup</button>
+  </form>
+  <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
+</div>

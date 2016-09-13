@@ -1,0 +1,12 @@
+<div id='container'>
+    <!-- grab all links and display here -->
+    <button ng-click="signout()">Logout</button>
+    <br>
+    <div ng-repeat="link in data['links'] | orderBy:'-visits'">
+        {{link.base_url}}/api/links/{{link.code}}
+        <a href="api/links/{{link.code}}">{{link.title}}</a>
+        Visits: {{ link.visits }}
+    </div>
+    <button ng-click="redirectToShorten()">Create Shortened Link</button>
+
+</div>

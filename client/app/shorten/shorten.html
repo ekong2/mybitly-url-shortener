@@ -1,0 +1,17 @@
+<div id='container'>
+  <button ng-click="signout()">Logout</button>
+
+  <form name="myForm">
+  <input type="url" ng-model="url" required></input>
+   <div role="alert">
+    <span class="error" ng-show="myForm.input.$error.required">
+      Required!</span>
+    <span class="error" ng-show="myForm.input.$error.url">
+      Not valid url!</span>
+  </div>
+  <button type="submit" ng-click="addLink(url)">Create Link</button>
+  </form>
+  <button ng-click="redirectToLinks()">View Shortened Links</button>
+</div>
+
+
