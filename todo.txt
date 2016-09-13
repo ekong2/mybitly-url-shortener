@@ -1,0 +1,12 @@
+::::::TODO:::::
+
+[√] pass all tests
+[√] enable nav between links list and shorten views
+[√] send user to correct view upon load
+[√] use angular validation for links and signup/login
+[√] save users to database and create sessions
+[√] show errors for invalid submissions
+[√] set visit count and display in order of most visits
+[] live search results when typing query
+[] save user_id on links
+[] only retrieve links for specific user
